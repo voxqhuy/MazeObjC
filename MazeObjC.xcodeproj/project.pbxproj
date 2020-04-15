@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE01C25124476A9B0069ACE8 /* Maze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maze.h; sourceTree = "<group>"; };
 		DE511B4A24476247000BB9EF /* MazeObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazeObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE511B4D24476247000BB9EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE511B4E24476247000BB9EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE01C250244769160069ACE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE01C25124476A9B0069ACE8 /* Maze.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DE511B4124476247000BB9EF = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +113,7 @@
 		DE511B4C24476247000BB9EF /* MazeObjC */ = {
 			isa = PBXGroup;
 			children = (
+				DE01C250244769160069ACE8 /* Models */,
 				DE511B4D24476247000BB9EF /* AppDelegate.h */,
 				DE511B4E24476247000BB9EF /* AppDelegate.m */,
 				DE511B5024476247000BB9EF /* SceneDelegate.h */,
