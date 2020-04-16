@@ -15,6 +15,7 @@
 @property int * StepCount;
 @property int * KillCount;
 @property Maze * currentMaze;
+- (id)initWithStepCount:(int)stepCount killCount:(int)killCount andCurrentMaze:(Maze*)currentMaze;
 
 @end
 
