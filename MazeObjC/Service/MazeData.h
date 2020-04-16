@@ -41,7 +41,7 @@
 - (id)init;
 
 - (NSArray*) createMazes;
-//- (NSArray*) createComponents;
+- (NSArray*) createComponents;
 //- (NSArray*) createMazeProgress;
 @end
 
