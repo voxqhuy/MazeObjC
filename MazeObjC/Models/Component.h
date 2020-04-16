@@ -14,8 +14,8 @@
 @interface Component : NSObject
 
 @property NSString * type;
-@property NSString * description;
-- (id)initWithType:(NSString*)type andDescription:(NSString*)description;
+@property NSString * desc;
+- (id)initWithType:(NSString*)type andDescription:(NSString*)desc;
 @end
 
 #endif /* Component_h */

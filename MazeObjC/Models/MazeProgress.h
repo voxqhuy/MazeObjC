@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Maze.h"
+
 #ifndef MazeProgress_h
 #define MazeProgress_h
 
 @interface MazeProgress : NSObject
 
-@property int * StepCount;
-@property int * KillCount;
+@property int StepCount;
+@property int KillCount;
 @property Maze * currentMaze;
 - (id)initWithStepCount:(int)stepCount killCount:(int)killCount andCurrentMaze:(Maze*)currentMaze;
 

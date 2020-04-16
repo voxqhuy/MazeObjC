@@ -15,12 +15,12 @@
 
 @implementation Component
 
-- (id)initWithType:(NSString*)type andDescription:(NSString*)description
+- (id)initWithType:(NSString*)type andDescription:(NSString*)desc
 {
     self = [super init];
     if (self) {
         self.type = type;
-        self.description = description;
+        self.desc = desc;
     }
     return self;
 }
