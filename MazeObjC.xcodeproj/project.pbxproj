@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE01C255244779C30069ACE8 /* Maze.m in Sources */ = {isa = PBXBuildFile; fileRef = DE01C254244779C30069ACE8 /* Maze.m */; };
+		DE01C257244803440069ACE8 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = DE01C256244803440069ACE8 /* Component.m */; };
 		DE511B4F24476247000BB9EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B4E24476247000BB9EF /* AppDelegate.m */; };
 		DE511B5224476247000BB9EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B5124476247000BB9EF /* SceneDelegate.m */; };
 		DE511B5524476247000BB9EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B5424476247000BB9EF /* ViewController.m */; };
@@ -37,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		DE01C25124476A9B0069ACE8 /* Maze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maze.h; sourceTree = "<group>"; };
+		DE01C25224476EF60069ACE8 /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		DE01C2532447703D0069ACE8 /* MazeProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MazeProgress.h; sourceTree = "<group>"; };
+		DE01C254244779C30069ACE8 /* Maze.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Maze.m; sourceTree = "<group>"; };
+		DE01C256244803440069ACE8 /* Component.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Component.m; sourceTree = "<group>"; };
 		DE511B4A24476247000BB9EF /* MazeObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazeObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE511B4D24476247000BB9EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE511B4E24476247000BB9EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				DE01C25124476A9B0069ACE8 /* Maze.h */,
+				DE01C254244779C30069ACE8 /* Maze.m */,
+				DE01C25224476EF60069ACE8 /* Component.h */,
+				DE01C256244803440069ACE8 /* Component.m */,
+				DE01C2532447703D0069ACE8 /* MazeProgress.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE01C255244779C30069ACE8 /* Maze.m in Sources */,
 				DE511B5524476247000BB9EF /* ViewController.m in Sources */,
 				DE511B4F24476247000BB9EF /* AppDelegate.m in Sources */,
+				DE01C257244803440069ACE8 /* Component.m in Sources */,
 				DE511B6024476249000BB9EF /* main.m in Sources */,
 				DE511B5224476247000BB9EF /* SceneDelegate.m in Sources */,
 			);
