@@ -18,9 +18,10 @@
 @property Maze * doorTo;
 @property Maze * leftTo;
 @property Maze * rightTo;
-@property int enemyCount;
 @property Component * component;
-- (id)initWithId:(int)id doorTo:(Maze*)doorTo leftTo:(Maze*)leftTo rightTo:(Maze*)rightTo enemyCount:(int)enemyCount andComponent:(Component*)component;
+@property int enemyCount;
+
+- (id)initWithId:(int)id doorTo:(Maze*)doorTo leftTo:(Maze*)leftTo rightTo:(Maze*)rightTo component:(Component*)component andEnemyCount:(int)enemyCount;
 @end
 
 #endif /* Maze_h */

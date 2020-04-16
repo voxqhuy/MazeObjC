@@ -15,7 +15,7 @@
 
 @implementation Maze
 
-- (id)initWithId:(int)id doorTo:(Maze*)doorTo leftTo:(Maze*)leftTo rightTo:(Maze*)rightTo enemyCount:(int)enemyCount andComponent:(Component*)component
+- (id)initWithId:(int)id doorTo:(Maze*)doorTo leftTo:(Maze*)leftTo rightTo:(Maze*)rightTo component:(Component*)component andEnemyCount:(int)enemyCount
 {
     self = [super init];
     if (self) {
@@ -23,8 +23,8 @@
         self.doorTo = doorTo;
         self.leftTo = leftTo;
         self.rightTo = rightTo;
-        self.enemyCount = enemyCount;
         self.component = component;
+        self.enemyCount = enemyCount;
     }
     return self;
 }

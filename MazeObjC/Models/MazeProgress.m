@@ -10,7 +10,6 @@
 #import "MazeProgress.h"
 
 @interface MazeProgress()
-
 @end
 
 @implementation MazeProgress
