@@ -46,4 +46,19 @@
     XCTAssertEqual([maze01 enemyCount], 1);
 }
 
+- (void)testComponentInit {
+    // GIVEN
+    NSArray *components = [_sut createComponents];
+    
+    // WHEN
+    Component *deadEnd = [components objectAtIndex:0];
+    Component *room = [components objectAtIndex:1];
+    
+    // THEN
+    XCTAssertTrue([[deadEnd type] isEqualToString:@"deadEnd"]);
+    XCTAssertTrue([[room type] isEqualToString:@"room"]);
+    XCTAssertTrue([[deadEnd desc] isEqualToString:@"a dead end"]);
+    XCTAssertTrue([[room desc] isEqualToString:@"a room with a door to another maze"]);
+}
+
 @end
