@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property NSArray * Mazes;
+@property NSArray * Components;
+@property NSArray * MazeProgress;
 
 @end
 

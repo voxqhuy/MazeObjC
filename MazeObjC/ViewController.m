@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MazeData.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    MazeData *mazeData = [[MazeData alloc] init];
+    self.Mazes = [mazeData createMazes];
 }
 
 
