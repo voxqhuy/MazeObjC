@@ -7,13 +7,18 @@
 //
 
 #import "Maze.h"
-#import "Component.h"
 #import "MazeProgress.h"
 
 #ifndef MazeData_h
 #define MazeData_h
 
 @interface MazeData : NSObject
+
+@property Component * deadEnd;
+@property Component * room;
+@property Component * fork;
+@property Component * enemy;
+@property Component * exit;
 
 @property Maze * Maze00;
 @property Maze * Maze01;
@@ -32,16 +37,13 @@
 @property Maze * Maze14;
 @property Maze * Maze15;
 
-@property Component * deadEnd;
-@property Component * room;
-@property Component * fork;
-@property Component * enemy;
-@property Component * exit;
+@property NSArray * mazeProgress;
 
 - (id)init;
 
 - (NSArray*) createMazes;
 - (NSArray*) createComponents;
+- (NSArray*) createMazeProgress;
 //- (NSArray*) createMazeProgress;
 @end
 

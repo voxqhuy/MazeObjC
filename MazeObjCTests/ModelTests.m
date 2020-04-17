@@ -61,4 +61,17 @@
     XCTAssertTrue([[room desc] isEqualToString:@"a room with a door to another maze"]);
 }
 
+- (void)testMazeProgressInit {
+    // GIVEN
+    NSArray *mazeProgress = [_sut createMazeProgress];
+    
+    // WHEN
+    MazeProgress *entrance = [mazeProgress objectAtIndex:0];
+    
+    // THEN
+    XCTAssertEqual([entrance stepCount], 0);
+    XCTAssertEqual([entrance killCount], 0);
+    XCTAssertEqual([entrance currentMazeId], 0);
+}
+
 @end

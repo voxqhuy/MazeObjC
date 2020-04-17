@@ -18,7 +18,6 @@
 		DE511B5A24476249000BB9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE511B5924476249000BB9EF /* Assets.xcassets */; };
 		DE511B5D24476249000BB9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE511B5B24476249000BB9EF /* LaunchScreen.storyboard */; };
 		DE511B6024476249000BB9EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B5F24476249000BB9EF /* main.m */; };
-		DE511B6A2447624A000BB9EF /* MazeObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B692447624A000BB9EF /* MazeObjCTests.m */; };
 		DE511B752447624A000BB9EF /* MazeObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B742447624A000BB9EF /* MazeObjCUITests.m */; };
 		DE8C0C442448DCDF008D6318 /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8C0C432448DCDF008D6318 /* ModelTests.m */; };
 /* End PBXBuildFile section */
@@ -62,7 +61,6 @@
 		DE511B5E24476249000BB9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE511B5F24476249000BB9EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE511B652447624A000BB9EF /* MazeObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazeObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE511B692447624A000BB9EF /* MazeObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazeObjCTests.m; sourceTree = "<group>"; };
 		DE511B6B2447624A000BB9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE511B702447624A000BB9EF /* MazeObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazeObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE511B742447624A000BB9EF /* MazeObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazeObjCUITests.m; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 		DE511B682447624A000BB9EF /* MazeObjCTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE511B692447624A000BB9EF /* MazeObjCTests.m */,
 				DE511B6B2447624A000BB9EF /* Info.plist */,
 				DE8C0C432448DCDF008D6318 /* ModelTests.m */,
 			);
@@ -322,7 +319,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8C0C442448DCDF008D6318 /* ModelTests.m in Sources */,
-				DE511B6A2447624A000BB9EF /* MazeObjCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

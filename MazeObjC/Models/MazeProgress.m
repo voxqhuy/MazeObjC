@@ -14,12 +14,12 @@
 
 @implementation MazeProgress
 
-- (id)initWithStepCount:(int)stepCount killCount:(int)killCount andCurrentMaze:(Maze*)currentMaze {
+- (id)initWithStepCount:(int)stepCount killCount:(int)killCount andCurrentMazeId:(int)currentMazeId {
     self = [super init];
     if (self) {
-        self.StepCount = stepCount;
-        self.KillCount = killCount;
-        self.currentMaze = currentMaze;
+        self.stepCount = stepCount;
+        self.killCount = killCount;
+        self.currentMazeId = currentMazeId;
     }
     return self;
 }
