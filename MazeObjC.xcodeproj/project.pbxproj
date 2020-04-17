@@ -10,6 +10,7 @@
 		DE01C255244779C30069ACE8 /* Maze.m in Sources */ = {isa = PBXBuildFile; fileRef = DE01C254244779C30069ACE8 /* Maze.m */; };
 		DE01C257244803440069ACE8 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = DE01C256244803440069ACE8 /* Component.m */; };
 		DE01C259244804620069ACE8 /* MazeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = DE01C258244804620069ACE8 /* MazeProgress.m */; };
+		DE01C2602448B14E0069ACE8 /* MazeData.m in Sources */ = {isa = PBXBuildFile; fileRef = DE01C25F2448B14E0069ACE8 /* MazeData.m */; };
 		DE511B4F24476247000BB9EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B4E24476247000BB9EF /* AppDelegate.m */; };
 		DE511B5224476247000BB9EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B5124476247000BB9EF /* SceneDelegate.m */; };
 		DE511B5524476247000BB9EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B5424476247000BB9EF /* ViewController.m */; };
@@ -19,6 +20,7 @@
 		DE511B6024476249000BB9EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B5F24476249000BB9EF /* main.m */; };
 		DE511B6A2447624A000BB9EF /* MazeObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B692447624A000BB9EF /* MazeObjCTests.m */; };
 		DE511B752447624A000BB9EF /* MazeObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B742447624A000BB9EF /* MazeObjCUITests.m */; };
+		DE8C0C442448DCDF008D6318 /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8C0C432448DCDF008D6318 /* ModelTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		DE01C254244779C30069ACE8 /* Maze.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Maze.m; sourceTree = "<group>"; };
 		DE01C256244803440069ACE8 /* Component.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Component.m; sourceTree = "<group>"; };
 		DE01C258244804620069ACE8 /* MazeProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazeProgress.m; sourceTree = "<group>"; };
+		DE01C25E2448AF410069ACE8 /* MazeData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MazeData.h; sourceTree = "<group>"; };
+		DE01C25F2448B14E0069ACE8 /* MazeData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazeData.m; sourceTree = "<group>"; };
 		DE511B4A24476247000BB9EF /* MazeObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazeObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE511B4D24476247000BB9EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE511B4E24476247000BB9EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		DE511B702447624A000BB9EF /* MazeObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazeObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE511B742447624A000BB9EF /* MazeObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazeObjCUITests.m; sourceTree = "<group>"; };
 		DE511B762447624A000BB9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE8C0C432448DCDF008D6318 /* ModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +108,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DE01C25D244818710069ACE8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DE01C25E2448AF410069ACE8 /* MazeData.h */,
+				DE01C25F2448B14E0069ACE8 /* MazeData.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		DE511B4124476247000BB9EF = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +140,7 @@
 		DE511B4C24476247000BB9EF /* MazeObjC */ = {
 			isa = PBXGroup;
 			children = (
+				DE01C25D244818710069ACE8 /* Service */,
 				DE01C250244769160069ACE8 /* Models */,
 				DE511B4D24476247000BB9EF /* AppDelegate.h */,
 				DE511B4E24476247000BB9EF /* AppDelegate.m */,
@@ -147,6 +162,7 @@
 			children = (
 				DE511B692447624A000BB9EF /* MazeObjCTests.m */,
 				DE511B6B2447624A000BB9EF /* Info.plist */,
+				DE8C0C432448DCDF008D6318 /* ModelTests.m */,
 			);
 			path = MazeObjCTests;
 			sourceTree = "<group>";
@@ -293,6 +309,7 @@
 				DE01C255244779C30069ACE8 /* Maze.m in Sources */,
 				DE511B5524476247000BB9EF /* ViewController.m in Sources */,
 				DE511B4F24476247000BB9EF /* AppDelegate.m in Sources */,
+				DE01C2602448B14E0069ACE8 /* MazeData.m in Sources */,
 				DE01C257244803440069ACE8 /* Component.m in Sources */,
 				DE511B6024476249000BB9EF /* main.m in Sources */,
 				DE511B5224476247000BB9EF /* SceneDelegate.m in Sources */,
@@ -304,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8C0C442448DCDF008D6318 /* ModelTests.m in Sources */,
 				DE511B6A2447624A000BB9EF /* MazeObjCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

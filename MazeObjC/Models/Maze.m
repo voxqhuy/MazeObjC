@@ -15,7 +15,7 @@
 
 @implementation Maze
 
-- (id)initWithId:(int)id doorTo:(Maze*)doorTo leftTo:(Maze*)leftTo rightTo:(Maze*)rightTo component:(Component*)component andEnemyCount:(int)enemyCount
+- (id)initWithId:(int)id doorTo:(int)doorTo leftTo:(int)leftTo rightTo:(int)rightTo component:(Component*)component andEnemyCount:(int)enemyCount
 {
     self = [super init];
     if (self) {
