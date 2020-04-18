@@ -10,21 +10,6 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *stepsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *killsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *mazeImageView;
-@property (weak, nonatomic) IBOutlet UIButton *enterRoomButton;
-@property (weak, nonatomic) IBOutlet UIButton *goLeftButton;
-@property (weak, nonatomic) IBOutlet UIButton *goRightButton;
-@property (weak, nonatomic) IBOutlet UIButton *restartButton;
-
-
-- (IBAction)enterRoomPressed:(UIButton *)sender;
-- (IBAction)goLeftPressed:(UIButton *)sender;
-- (IBAction)goRightPressed:(UIButton *)sender;
-- (IBAction)restartPressed:(UIButton *)sender;
-
 - (void)loadUI;
 - (UIImage*)imageFor:(Component*)component;
 - (void)updateGameFor:(Maze*)maze;
