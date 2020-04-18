@@ -19,6 +19,7 @@
 @property Component * fork;
 @property Component * enemy;
 @property Component * exit;
+@property Component * entrance;
 
 @property Maze * Maze00;
 @property Maze * Maze01;

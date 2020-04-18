@@ -18,10 +18,11 @@
     self = [super init];
     if (self) {
         self.deadEnd = [[Component alloc] initWithType:@"deadEnd" andDescription:@"a dead end"];
-        self.room = [[Component alloc] initWithType:@"room" andDescription:@"a room with a door to another maze"];
-        self.fork = [[Component alloc] initWithType:@"fork" andDescription:@"a fork with a maze on the right and a maze on the left"];
+        self.room = [[Component alloc] initWithType:@"room" andDescription:@"a door to another maze"];
+        self.fork = [[Component alloc] initWithType:@"fork" andDescription:@"a fork with two mazes"];
         self.enemy = [[Component alloc] initWithType:@"enemy" andDescription:@"a maze with an enemy"];
         self.exit = [[Component alloc] initWithType:@"exit" andDescription:@"an exit"];
+        self.entrance = [[Component alloc] initWithType:@"entrance" andDescription:@"welcome to the maze"];
         
         self.Maze00 = [[Maze alloc] initWithId:0 doorTo:3 leftTo:-1 rightTo:-1 component:self.room andEnemyCount:0];
         self.Maze01 = [[Maze alloc] initWithId:1 doorTo:-1 leftTo:-1 rightTo:-1 component:self.enemy andEnemyCount:1];
@@ -38,7 +39,7 @@
         self.Maze12 = [[Maze alloc] initWithId:12 doorTo:11 leftTo:-1 rightTo:-1 component:self.room andEnemyCount:0];
         self.Maze13 = [[Maze alloc] initWithId:13 doorTo:-1 leftTo:-1 rightTo:-1 component:self.exit andEnemyCount:0];
         self.Maze14 = [[Maze alloc] initWithId:14 doorTo:9 leftTo:-1 rightTo:-1 component:self.room andEnemyCount:0];
-        self.Maze15 = [[Maze alloc] initWithId:15 doorTo:14 leftTo:-1 rightTo:-1 component:self.room andEnemyCount:1];
+        self.Maze15 = [[Maze alloc] initWithId:15 doorTo:-1 leftTo:-1 rightTo:-1 component:self.room andEnemyCount:1];
         
         self.mazeProgress = [[MazeProgress alloc] initWithStepCount:0
                                                           killCount:0
