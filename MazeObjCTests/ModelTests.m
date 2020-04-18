@@ -34,16 +34,16 @@
     // THEN
     XCTAssertEqual([maze00 id], 0);
     XCTAssertEqual([maze01 id], 1);
-    XCTAssertEqual([maze00 doorTo], 3);
+    XCTAssertEqual([maze00 doorTo], 1);
     XCTAssertEqual([maze01 doorTo], -1);
     XCTAssertEqual([maze00 leftTo], -1);
-    XCTAssertEqual([maze01 leftTo], -1);
+    XCTAssertEqual([maze01 leftTo], 2);
     XCTAssertEqual([maze00 rightTo], -1);
-    XCTAssertEqual([maze01 rightTo], -1);
+    XCTAssertEqual([maze01 rightTo], 3);
     XCTAssertTrue([[[maze00 component] type] isEqualToString:@"room"]);
     XCTAssertTrue([[[maze01 component] type] isEqualToString:@"enemy"]);
     XCTAssertEqual([maze00 enemyCount], 0);
-    XCTAssertEqual([maze01 enemyCount], 1);
+    XCTAssertEqual([maze01 enemyCount], 0);
 }
 
 - (void)testComponentInit {
@@ -57,8 +57,8 @@
     // THEN
     XCTAssertTrue([[deadEnd type] isEqualToString:@"deadEnd"]);
     XCTAssertTrue([[room type] isEqualToString:@"room"]);
-    XCTAssertTrue([[deadEnd desc] isEqualToString:@"a dead end"]);
-    XCTAssertTrue([[room desc] isEqualToString:@"a room with a door to another maze"]);
+    XCTAssertTrue([[deadEnd desc] isEqualToString:@"A dead end"]);
+    XCTAssertTrue([[room desc] isEqualToString:@"A room with a door to another maze"]);
 }
 
 - (void)testMazeProgressInit {

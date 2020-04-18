@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *stepsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *killsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *mazeImageView;
 @property (weak, nonatomic) IBOutlet UIButton *enterRoomButton;
 @property (weak, nonatomic) IBOutlet UIButton *goLeftButton;
@@ -54,6 +55,7 @@
                             [[self mazeProgress] stepCount]];
     self.killsLabel.text = [NSString stringWithFormat:@"Kills: %d",
                             [[self mazeProgress] killCount]];
+    self.statusLabel.text = [NSString stringWithFormat:@"Location: %@", [[currentMaze component] desc]];
     self.mazeImageView.image = [self imageFor:[currentMaze component]];
     self.enterRoomButton.enabled = [currentMaze doorTo] == -1 ? false : true;
     self.goLeftButton.enabled = [currentMaze leftTo] == -1 ? false : true;
@@ -91,7 +93,7 @@
 
 // MARK: - Helpers
 - (UIImage*)imageFor:(Component*)component {
-    return nil;
+    return [UIImage imageNamed:[component type]];
 }
 
 - (void)updateGameFor:(Maze*)maze {
