@@ -37,13 +37,13 @@
 @property Maze * Maze14;
 @property Maze * Maze15;
 
-@property NSArray * mazeProgress;
+@property MazeProgress * mazeProgress;
 
 - (id)init;
 
 - (NSArray*) createMazes;
 - (NSArray*) createComponents;
-- (NSArray*) createMazeProgress;
+- (MazeProgress*) createMazeProgress;
 //- (NSArray*) createMazeProgress;
 @end
 

@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MazeData.h"
 
 @interface ViewController : UIViewController
 
-@property NSArray * Mazes;
-@property NSArray * Components;
-@property NSArray * MazeProgress;
+@property NSArray * mazes;
+@property NSArray * components;
+@property MazeProgress * mazeProgress;
+@property Maze * currentMaze;
 
 @end
 

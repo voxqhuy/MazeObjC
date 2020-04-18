@@ -40,12 +40,9 @@
         self.Maze14 = [[Maze alloc] initWithId:14 doorTo:9 leftTo:-1 rightTo:-1 component:self.room andEnemyCount:0];
         self.Maze15 = [[Maze alloc] initWithId:15 doorTo:14 leftTo:-1 rightTo:-1 component:self.room andEnemyCount:1];
         
-        self.mazeProgress = [[NSArray alloc]
-                             initWithObjects:[[MazeProgress alloc]
-                                              initWithStepCount:0
-                                              killCount:0
-                                              andCurrentMazeId:0],
-                             nil];
+        self.mazeProgress = [[MazeProgress alloc] initWithStepCount:0
+                                                          killCount:0
+                                                   andCurrentMazeId:0];
     }
     return self;
 }
@@ -60,14 +57,9 @@
     return [NSArray arrayWithObjects:self.deadEnd, self.room, self.fork, self.enemy, self.exit, nil];
 }
 
-- (NSArray*) createMazeProgress
+- (MazeProgress*) createMazeProgress
 {
     return [self mazeProgress];
 }
-
-//- (NSArray*) createMazeProgress
-//{
-//    
-//}
 
 @end
