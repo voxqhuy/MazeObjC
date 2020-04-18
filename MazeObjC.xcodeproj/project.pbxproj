@@ -12,6 +12,7 @@
 		DE01C259244804620069ACE8 /* MazeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = DE01C258244804620069ACE8 /* MazeProgress.m */; };
 		DE01C2602448B14E0069ACE8 /* MazeData.m in Sources */ = {isa = PBXBuildFile; fileRef = DE01C25F2448B14E0069ACE8 /* MazeData.m */; };
 		DE1EBC10244956150087C1FB /* AppDeletgateTEsts.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1EBC0F244956150087C1FB /* AppDeletgateTEsts.m */; };
+		DE321046244BA8F100637C92 /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE321045244BA8F100637C92 /* ViewControllerTests.m */; };
 		DE511B4F24476247000BB9EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B4E24476247000BB9EF /* AppDelegate.m */; };
 		DE511B5224476247000BB9EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B5124476247000BB9EF /* SceneDelegate.m */; };
 		DE511B5524476247000BB9EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE511B5424476247000BB9EF /* ViewController.m */; };
@@ -50,6 +51,7 @@
 		DE01C25E2448AF410069ACE8 /* MazeData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MazeData.h; sourceTree = "<group>"; };
 		DE01C25F2448B14E0069ACE8 /* MazeData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazeData.m; sourceTree = "<group>"; };
 		DE1EBC0F244956150087C1FB /* AppDeletgateTEsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDeletgateTEsts.m; sourceTree = "<group>"; };
+		DE321045244BA8F100637C92 /* ViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
 		DE511B4A24476247000BB9EF /* MazeObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazeObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE511B4D24476247000BB9EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE511B4E24476247000BB9EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				DE511B6B2447624A000BB9EF /* Info.plist */,
 				DE8C0C432448DCDF008D6318 /* ModelTests.m */,
 				DE1EBC0F244956150087C1FB /* AppDeletgateTEsts.m */,
+				DE321045244BA8F100637C92 /* ViewControllerTests.m */,
 			);
 			path = MazeObjCTests;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE321046244BA8F100637C92 /* ViewControllerTests.m in Sources */,
 				DE8C0C442448DCDF008D6318 /* ModelTests.m in Sources */,
 				DE1EBC10244956150087C1FB /* AppDeletgateTEsts.m in Sources */,
 			);
